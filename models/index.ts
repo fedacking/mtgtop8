@@ -1,2 +1,2 @@
-export * from './event';
-export * from './formats';
+export * from './mtgEvent';
+export * from './mtgFormats';

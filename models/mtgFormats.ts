@@ -1,4 +1,4 @@
-export enum Formats {
+export enum MTGFormats {
     Standard = "ST",
     Modern = "MO",
     Legacy = "LE",
