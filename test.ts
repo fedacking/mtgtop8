@@ -22,7 +22,7 @@ async function main() {
         console.log(events);
     }
 
-    for(let i = 1; i < 6; i++){
+    for(let i = 1; i < 3; i++){
         console.log(`page ${i} ${MTGFormats.Vintage} results \n`);
         let events = await MTGTop8Scraper.getFormatEventsByPage(MTGFormats.Vintage,i);
         console.log(events);
@@ -40,7 +40,7 @@ async function main() {
         console.log(events);
     }
 
-    for(let i = 1; i < 3; i++){
+    for(let i = 1; i < 6; i++){
         console.log(`page ${i} ${MTGFormats.Commander} results \n`);
         let events = await MTGTop8Scraper.getFormatEventsByPage(MTGFormats.Commander,i);
         console.log(events);
