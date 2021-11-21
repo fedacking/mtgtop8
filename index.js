@@ -1,14 +1,12 @@
-var req = require('request');
+var superagent = require('superagent');
 var cheerio = require('cheerio');
 var moment = require('moment');
 var iconv = require('iconv-lite');
 
-req = req.defaults({
-	encoding: null
-});
+
 
 var fetchDeck = function(eventId, deckId, callback) {
-	req('http://mtgtop8.com/event?e='+eventId+'&d='+deckId, function(err, res) {
+	superagent('http://mtgtop8.com/event?e='+eventId+'&d='+deckId).end((err, res) => {
 		if (err) return callback(err);
 
 		var $ = cheerio.load(iconv.decode(res.body, 'latin-1'));
@@ -45,6 +43,8 @@ var fetchDeck = function(eventId, deckId, callback) {
 		callback(null, result);
 	});
 };
+
+
 
 var fetchEventInfo = function(eventId, callback) {
 	req('http://mtgtop8.com/event?e='+eventId, function(err, res) {
