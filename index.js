@@ -2,7 +2,7 @@ var superagent = require('superagent');
 var cheerio = require('cheerio');
 var moment = require('moment');
 var iconv = require('iconv-lite');
-
+var req = require('request');
 
 
 var fetchDeck = function(eventId, deckId, callback) {
