@@ -3,6 +3,7 @@
   "version": "0.3.1",
   "description": "Get events and decks data from mtgtop8.com",
   "main": "test.ts",
+  "type": "module",
   "keywords": [
     "mtg",
     "mtgtop8",
