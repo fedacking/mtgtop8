@@ -22,7 +22,8 @@
     "@types/superagent": "^4.1.13",
     "cheerio": "^1.0.0-rc.10",
     "moment": "^2.8.1",
-    "superagent": "^6.1.0"
+    "superagent": "^6.1.0",
+    "iconv-lite": "^0.6.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
